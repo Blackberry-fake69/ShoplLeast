@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#614B4B"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/testename"
+                android:layout_width="596dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:layout_weight="1"
+                android:text="Lista Vazia"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="38sp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="354dp"
+            android:padding="35dp"
+            android:paddingTop="?attr/actionBarSize"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="283dp"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <Button
+                android:id="@+id/AdicionarTest"
+                android:layout_width="192dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="120dp"
+                android:backgroundTint="@color/corBotao"
+                android:text="Adicionar"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="30dp"
+                app:iconTint="@android:color/holo_green_dark" />
+
+            <Button
+                android:id="@+id/btnConcluirLista"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="120dp"
+                android:backgroundTint="@color/corBotao"
+                android:text="CONCLUIR"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:icon="?attr/actionModePasteDrawable"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="32dp"
+                app:iconTint="@android:color/holo_red_dark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

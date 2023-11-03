@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"
+
+    ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AppCompat.Button.Borderless"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_compat_inset_shadow"
+    android:background="@color/corFundo"
+    android:backgroundTint="@color/corFundo"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="773dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/corFundo"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Lista_Items"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/corFundo"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/corFundo"
+            app:contentPaddingTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/corFundo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/corFundo"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="85dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:scrollbarAlwaysDrawVerticalTrack="false"
+                    android:text="Shop Least"
+                    android:textAlignment="center"
+                    android:textColor="@color/corBotao"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="519dp"
+            android:background="@color/corFundo"
+            android:textColor="@color/black"
+            app:cardBackgroundColor="@color/corFundo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/corFundo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/corFundo"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/criarLista"
+                        android:layout_width="238dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginEnd="120dp"
+
+
+                        android:backgroundTint="@color/corBotao"
+                        android:onClick="navCriar"
+                        android:padding="10dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="NOVA LISTA"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="356dp"
+                    android:background="@color/corFundo"
+                    android:backgroundTint="@color/corFundo"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/consultarListas"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="120dp"
+
+                        android:backgroundTint="@color/corBotao"
+                        android:onClick="navConsultar"
+                        android:padding="10dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="CONSULTAR"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
